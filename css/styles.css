@@ -1,0 +1,224 @@
+:root {
+  /* Fonts */
+  --main-font-family: "Roboto", sans-serif;
+  --secondary-font-family: "Raleway", sans-serif;
+
+  /* text colors*/
+  --primary-txt-cl: #212121;
+  --secondary-txt-cl: #757575;
+  --dark-txt-cl: #000;
+  --light-txt-cl: #fff;
+  --light-txt-cl-60: rgba(255, 255, 255, 0.6);
+  --accent-txt-cl: #2196f3;
+
+  /* background colors */
+  --baner-cl: #2f303a;
+  --section-bc-cl: #f5f4fa;
+  --light-bc-cl: #ffffff;
+  --accent-cl: #2196f3;
+  --accent-act-cl: #188ce8;
+  --line-cl: #ececec;
+  --portfolio-br-cl: #eeeeee;
+}
+
+body {
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  color: var(--primary-txt-cl);
+}
+
+/* шапка сторінки */
+
+.list {
+  list-style: none;
+}
+.list a {
+  text-decoration: none;
+}
+
+.header {
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+.header-logo,
+.footer-logo {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+}
+.header-logo {
+  color: var(--dark-txt-cl);
+}
+.accent {
+  color: var(--accent-txt-cl);
+}
+
+.header-link {
+  color: inherit;
+}
+.header-link:hover,
+.header-link:focus,
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-txt-cl);
+}
+
+.current {
+  color: var(--accent-cl);
+}
+.contacts {
+  color: var(--secondary-txt-cl);
+}
+
+/* банер */
+.hero {
+  background-color: var(--baner-cl);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--light-txt-cl);
+}
+.hero-btn,
+.btn {
+  cursor: pointer;
+}
+
+.hero-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  background: var(--accent-cl);
+  color: var(--light-txt-cl);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--accent-act-cl);
+}
+/* особливості */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.item-title {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.desc {
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-txt-cl);
+}
+/* чим ми займаємося */
+
+.section-title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* наша команда */
+.team {
+  background-color: var(--section-bc-cl);
+}
+.card {
+  background-color: var(--light-bc-cl);
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-position {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-txt-cl);
+}
+/* підвал сторінки */
+
+.footer {
+  background-color: var(--baner-cl);
+}
+
+.address {
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+
+  font-style: normal;
+}
+.footer-logo,
+.footer-link {
+  color: var(--light-txt-cl);
+}
+.contact {
+  color: var(--light-txt-cl-60);
+}
+
+/* портфоліо */
+
+/* фільтр */
+
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-txt-cl);
+  background-color: var(--section-bc-cl);
+}
+.btn:hover,
+.btn:focus {
+  color: var(--light-txt-cl);
+  background-color: var(--accent-cl);
+}
+/* галерея проєктів */
+
+.project-title {
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+}
+.project-name {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-txt-cl);
+}
