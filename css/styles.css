@@ -26,20 +26,56 @@ body {
   font-size: 14px;
   color: var(--primary-txt-cl);
 }
-
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
 /* шапка сторінки */
 
 .list {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 .list a {
   text-decoration: none;
 }
+.img {
+  display: block;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+  outline-offset: -1px;
+}
 
 .header {
+  border-bottom: 1px solid var(--line-cl);
+
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+.header-list,
+.contacts-list {
+  display: flex;
+}
+.header-list .list-item:not(:last-child),
+.contacts-list .list-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-logo,
@@ -53,13 +89,19 @@ body {
   text-decoration: none;
 }
 .header-logo {
+  margin-right: 93px;
   color: var(--dark-txt-cl);
 }
+
 .accent {
   color: var(--accent-txt-cl);
 }
 
 .header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: inherit;
 }
 .header-link:hover,
@@ -72,23 +114,35 @@ body {
 .current {
   color: var(--accent-cl);
 }
+
+.contacts-list {
+  margin-left: auto;
+}
 .contacts {
   color: var(--secondary-txt-cl);
 }
 
 /* банер */
 .hero {
+  margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+
   background-color: var(--baner-cl);
 }
 .hero-title {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
+
+  color: var(--light-txt-cl);
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  color: var(--light-txt-cl);
 }
 .hero-btn,
 .btn {
@@ -96,16 +150,19 @@ body {
 }
 
 .hero-btn {
+  display: inline-block;
+  padding: 10px 32px;
+  border: 1px transparent;
+  border-radius: 4px;
+  min-width: 216px;
+  text-align: center;
+
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   background: var(--accent-cl);
   color: var(--light-txt-cl);
-
-  display: flex;
-  align-items: center;
-  text-align: center;
 }
 
 .hero-btn:hover,
@@ -113,6 +170,10 @@ body {
   background-color: var(--accent-act-cl);
 }
 /* особливості */
+.content {
+  display: flex;
+  gap: 30px;
+}
 
 .visually-hidden {
   position: absolute;
@@ -126,14 +187,20 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-
+.section {
+  padding-bottom: 94px;
+}
 .item-title {
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .desc {
+  margin-top: 0;
+
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 
@@ -142,6 +209,8 @@ body {
 /* чим ми займаємося */
 
 .section-title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
@@ -150,6 +219,8 @@ body {
 
 /* наша команда */
 .team {
+  padding-top: 94px;
+
   background-color: var(--section-bc-cl);
 }
 .card {
@@ -157,6 +228,9 @@ body {
 }
 
 .team-name {
+  padding-top: 30px;
+  padding-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -164,6 +238,8 @@ body {
   letter-spacing: 0.03em;
 }
 .team-position {
+  margin-bottom: 30px;
+
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
@@ -173,13 +249,15 @@ body {
 /* підвал сторінки */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--baner-cl);
 }
 
 .address {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-
   font-style: normal;
 }
 .footer-logo,
@@ -191,10 +269,23 @@ body {
 }
 
 /* портфоліо */
-
+.galery {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* фільтр */
+.list.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 
 .btn {
+  padding: 6px 22px;
+  margin-right: 8px;
+  border: 1px transparent;
+  border-radius: 4px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
@@ -209,8 +300,22 @@ body {
   background-color: var(--accent-cl);
 }
 /* галерея проєктів */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
+.project-item {
+  border-right: 1px;
+  border-bottom: 1px;
+  border-left: 1px;
+  border-style: solid;
+  border-color: var(--portfolio-br-cl);
+  padding: 20px 24px;
+}
 .project-title {
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
