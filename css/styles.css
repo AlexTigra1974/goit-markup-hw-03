@@ -54,8 +54,6 @@ p {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
-  outline-offset: -1px;
 }
 
 .header {
@@ -124,7 +122,6 @@ p {
 
 /* банер */
 .hero {
-  margin-bottom: 94px;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -170,6 +167,15 @@ p {
   background-color: var(--accent-act-cl);
 }
 /* особливості */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.description {
+  padding-bottom: 0;
+}
+
 .content {
   display: flex;
   gap: 30px;
@@ -187,9 +193,7 @@ p {
   clip-path: inset(50%);
   margin: -1px;
 }
-.section {
-  padding-bottom: 94px;
-}
+
 .item-title {
   margin-bottom: 10px;
 
@@ -219,8 +223,6 @@ p {
 
 /* наша команда */
 .team {
-  padding-top: 94px;
-
   background-color: var(--section-bc-cl);
 }
 .card {
@@ -276,13 +278,14 @@ p {
 /* фільтр */
 .list.filters {
   display: flex;
+  gap: 8px;
   justify-content: center;
   margin-bottom: 50px;
 }
 
 .btn {
+  display: inline-block;
   padding: 6px 22px;
-  margin-right: 8px;
   border: 1px transparent;
   border-radius: 4px;
 
@@ -294,6 +297,12 @@ p {
   color: var(--primary-txt-cl);
   background-color: var(--section-bc-cl);
 }
+/* кнопка "Усі"*/
+.big {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
 .btn:hover,
 .btn:focus {
   color: var(--light-txt-cl);
@@ -307,11 +316,10 @@ p {
 }
 
 .project-item {
-  border-right: 1px;
-  border-bottom: 1px;
-  border-left: 1px;
-  border-style: solid;
-  border-color: var(--portfolio-br-cl);
+  border-right: 1px solid var(--portfolio-br-cl);
+  border-bottom: 1px solid var(--portfolio-br-cl);
+  border-left: 1px solid var(--portfolio-br-cl);
+
   padding: 20px 24px;
 }
 .project-title {
