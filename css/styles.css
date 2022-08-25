@@ -71,9 +71,9 @@ p {
 .contacts-list {
   display: flex;
 }
-.header-list .list-item:not(:last-child),
-.contacts-list .list-item:not(:last-child) {
-  margin-right: 50px;
+.header-list,
+.contacts-list {
+  gap: 50px;
 }
 
 .header-logo,
