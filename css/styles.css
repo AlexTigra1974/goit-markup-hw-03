@@ -45,7 +45,9 @@ p {
 .list a {
   text-decoration: none;
 }
-.img {
+img {
+  max-width: 100%;
+  height: auto;
   display: block;
 }
 .container {
@@ -172,10 +174,6 @@ p {
   padding-bottom: 94px;
 }
 
-.description {
-  padding-bottom: 0;
-}
-
 .content {
   display: flex;
   gap: 30px;
@@ -211,6 +209,9 @@ p {
   color: var(--secondary-txt-cl);
 }
 /* чим ми займаємося */
+.gallery {
+  padding-top: 0;
+}
 
 .section-title {
   margin-bottom: 50px;
@@ -228,11 +229,12 @@ p {
 .card {
   background-color: var(--light-bc-cl);
 }
-
-.team-name {
+.team-card {
   padding-top: 30px;
-  padding-bottom: 10px;
-
+  padding-bottom: 30px;
+}
+.team-name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -240,8 +242,6 @@ p {
   letter-spacing: 0.03em;
 }
 .team-position {
-  margin-bottom: 30px;
-
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
@@ -262,6 +262,15 @@ p {
   letter-spacing: 0.03em;
   font-style: normal;
 }
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer .list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer-logo,
 .footer-link {
   color: var(--light-txt-cl);
@@ -271,10 +280,7 @@ p {
 }
 
 /* портфоліо */
-.galery {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 /* фільтр */
 .list.filters {
   display: flex;
